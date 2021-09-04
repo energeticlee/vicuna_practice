@@ -1,0 +1,181 @@
+.mainNavContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+}
+
+.mainContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 80px;
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+}
+.mainContainerSmall {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 80px;
+    background-color: white;
+}
+
+.NavContainer {
+    display: flex;
+    width: 95%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.NavLeftContainer {
+    display: flex;
+    align-items: center;
+}
+
+.logoContainer {
+    color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 125px;
+    width: 125px;
+}
+
+.navList {
+    display: flex;
+    color: var(--color-primary);
+}
+
+h2, h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+h2:hover {
+    color: var(--color-secondary);
+    transition: all 0.3s;
+}
+
+h3 {
+    margin: 0;
+}
+
+.dropdownMain {
+    position: relative;
+}
+
+.authentication {
+    display: flex;
+    color: var(--color-primary);
+    align-items: center;
+    height: 100%;
+    width: 230px;
+}
+
+.dropdownProduct {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    transition: all 0.5s;
+    height: 0;
+    overflow: hidden;
+    clip-path: inset(0 0 100% 0);
+    top: 20px;
+}
+
+.activeDropdown {
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+    background: white;
+    align-items: center;
+    height: 56px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    clip-path: inset(0 0 -100% 0);
+    transition: all 0.5s;
+    position: absolute;
+    top: 20px;
+}
+
+.dropdownItemContainer:hover {
+    transition: all 0.3s;
+}
+
+.dropdownItemContainer:hover {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.dropdownItem {
+    margin: 5px;
+}
+
+.listContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 25px 0 0 50px;
+}
+
+.loginButton {
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary);
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    box-shadow: none;
+    border: none;
+    color: white;
+    padding: 12px;
+    align-items: center;
+  }
+
+  .loginText {
+      margin: 10px 0;
+      color: var(--color-primary);
+  }
+
+  .loginContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 0 0 50px;
+}
+
+  .menuContainer {
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+    clip-path: inset(0 0 100% 0);
+}
+
+.menuContainer .active {
+  border-bottom: none;
+}
+
+.active {
+  border-bottom: 0.2px solid rgba(0, 0, 0, 0.2);
+    height: 200px;
+    overflow: hidden;
+    clip-path: inset(0 0 -100% 0);
+    transition: all 0.5s;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+}
